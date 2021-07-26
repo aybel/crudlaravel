@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/proveedores', 'App\Http\Controllers\ProveedoresController@index');
+Route::get('/requisiciones', 'App\Http\Controllers\RequisicionController@index')->name('requisiciones.index');
+Route::get('/requisiciones/create', 'App\Http\Controllers\RequisicionController@create')->name('requisiciones.create');
+Route::post('/requisiciones', 'App\Http\Controllers\RequisicionController@store')->name('requisiciones.store');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
