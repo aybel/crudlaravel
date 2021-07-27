@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class CatestorgSeeder extends Seeder
+class catestorgSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class CatestorgSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'UR',
             'clave'=>'2030000000',
             'nombre'=>'Secretaría de Finanzas',
@@ -23,7 +23,7 @@ class CatestorgSeeder extends Seeder
             'created_at'=>date('Y-m-d H:i:s'),
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'UE',
             'clave'=>'203A000000',
             'nombre'=>'Oficina del C. Srio. Finanzas',
@@ -32,7 +32,7 @@ class CatestorgSeeder extends Seeder
             'created_at'=>date('Y-m-d H:i:s'),
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'CC',
             'clave'=>'203A000001',
             'nombre'=>'Oficina del C. Srio. Finanzas',
@@ -41,7 +41,7 @@ class CatestorgSeeder extends Seeder
             'created_at'=>date('Y-m-d H:i:s'),
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'UE',
             'clave'=>'2030200000',
             'nombre'=>'Coordinación Administrativa',
@@ -50,7 +50,7 @@ class CatestorgSeeder extends Seeder
             'created_at'=>date('Y-m-d H:i:s'),
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'CC',
             'clave'=>'2030200001',
             'nombre'=>'Coordinación Administrativa',
@@ -59,7 +59,7 @@ class CatestorgSeeder extends Seeder
             'created_at'=>date('Y-m-d H:i:s'),
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'UE',
             'clave'=>'2030400000',
             'nombre'=>'Unidad de Información, Planeación, Programación y Evaluación',
@@ -68,7 +68,7 @@ class CatestorgSeeder extends Seeder
             'created_at'=>date('Y-m-d H:i:s'),
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'CC',
             'clave'=>'2030400001',
             'nombre'=>'Unidad de Información, Planeación, Programación y Evaluación',
@@ -78,7 +78,7 @@ class CatestorgSeeder extends Seeder
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'UE',
             'clave'=>'2031300000',
             'nombre'=>'Dirección General de Fiscalización',
@@ -88,7 +88,7 @@ class CatestorgSeeder extends Seeder
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'CC',
             'clave'=>'20313A0000',
             'nombre'=>'Oficina del C. Director General',
@@ -98,7 +98,7 @@ class CatestorgSeeder extends Seeder
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'CC',
             'clave'=>'2031342000',
             'nombre'=>'Delegación de Fiscalización Toluca',
@@ -108,7 +108,7 @@ class CatestorgSeeder extends Seeder
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'CC',
             'clave'=>'2031343000',
             'nombre'=>'Delegación de Fiscalización Naucalpan',
@@ -118,7 +118,7 @@ class CatestorgSeeder extends Seeder
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'UE',
             'clave'=>'2032000000',
             'nombre'=>'Subsecretaría de Planeación y Presupuesto',
@@ -128,7 +128,7 @@ class CatestorgSeeder extends Seeder
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'CC',
             'clave'=>'2032000001',
             'nombre'=>'Subsecretaría de Planeación y Presupuesto',
@@ -138,7 +138,7 @@ class CatestorgSeeder extends Seeder
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'UE',
             'clave'=>'2032100000',
             'nombre'=>'Dirección General de Planeación y Gasto Público',
@@ -148,7 +148,7 @@ class CatestorgSeeder extends Seeder
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'CC',
             'clave'=>'2032100001',
             'nombre'=>'Dirección General de Planeación y Gasto Público',
@@ -159,7 +159,7 @@ class CatestorgSeeder extends Seeder
         ]);
 
 
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'UE',
             'clave'=>'2033200000',
             'nombre'=>'Dirección General de Financiamiento de Proyectos',
@@ -169,7 +169,7 @@ class CatestorgSeeder extends Seeder
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catestorg')->insert([
+        DB::table('catestorgs')->insert([
             'tipo'=>'CC',
             'clave'=>'2033200001',
             'nombre'=>'Dirección General de Financiamiento de Proyectos',

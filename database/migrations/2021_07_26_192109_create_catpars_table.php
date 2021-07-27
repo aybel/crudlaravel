@@ -13,7 +13,7 @@ class CreateCatparsTable extends Migration
      */
     public function up()
     {
-        Schema::create('catpar', function (Blueprint $table) {
+        Schema::create('catpars', function (Blueprint $table) {
             $table->id();
             $table->char('tipo', '2');
             $table->string('clave');

@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class CatparSeeder extends Seeder
+class catparSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,7 @@ class CatparSeeder extends Seeder
     public function run()
     {
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'C',
             'clave' => '2000',
             'nombre' => 'Materiales y suministros',
@@ -25,7 +25,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'S',
             'clave' => '2100',
             'nombre' => 'Materiales de administración, emisión de documentos y artículos oficiales',
@@ -35,7 +35,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'G',
             'clave' => '2110',
             'nombre' => 'Materiales, útiles y equipos menores de oficina',
@@ -45,7 +45,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'P',
             'clave' => '2111',
             'nombre' => 'Materiales y útiles de oficina',
@@ -55,7 +55,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'P',
             'clave' => '2112',
             'nombre' => 'Enseres de oficina',
@@ -65,7 +65,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'G',
             'clave' => '2120',
             'nombre' => 'Materiales y útiles de impresión y reproducción',
@@ -75,7 +75,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'P',
             'clave' => '2121',
             'nombre' => 'Material y útiles de imprenta y reproducción',
@@ -85,7 +85,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'G',
             'clave' => '2160',
             'nombre' => 'Material de limpieza',
@@ -95,7 +95,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'P',
             'clave' => '2161',
             'nombre' => 'Material y enseres de limpieza',
@@ -105,7 +105,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'C',
             'clave' => '3000',
             'nombre' => 'Servicios generales',
@@ -115,7 +115,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'S',
             'clave' => '3100',
             'nombre' => 'Servicios básicos',
@@ -124,7 +124,7 @@ class CatparSeeder extends Seeder
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'G',
             'clave' => '3110',
             'nombre' => 'Energía eléctrica',
@@ -134,7 +134,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'P',
             'clave' => '3111',
             'nombre' => 'Servicio de energía eléctrica',
@@ -144,7 +144,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'P',
             'clave' => '3112',
             'nombre' => 'Servicio de energía eléctrica para alumbrado público',
@@ -154,7 +154,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'G',
             'clave' => '3160',
             'nombre' => 'Servicios de telecomunicaciones y satélites',
@@ -164,7 +164,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'P',
             'clave' => '3161',
             'nombre' => 'Servicios de radiolocalización y telecomunicación',
@@ -174,7 +174,7 @@ class CatparSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 
-        DB::table('catpar')->insert([
+        DB::table('catpars')->insert([
             'tipo' => 'P',
             'clave' => '3162',
             'nombre' => 'Servicios de conducción de señales analógicas y digitales',

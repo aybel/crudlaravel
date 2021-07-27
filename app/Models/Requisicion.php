@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Requisicion extends Model
 {
+    protected $table = "requisiciones";
     use HasFactory;
 }

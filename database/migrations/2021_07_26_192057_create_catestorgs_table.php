@@ -13,7 +13,7 @@ class CreateCatestorgsTable extends Migration
      */
     public function up()
     {
-        Schema::create('catestorg', function (Blueprint $table) {
+        Schema::create('catestorgs', function (Blueprint $table) {
             $table->id();
             $table->char('tipo', '2')->comment('Tipo de dependencia');
             $table->string('clave')->comment('clave de dependencia');

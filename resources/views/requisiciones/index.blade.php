@@ -19,13 +19,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Secretaría de finanzas</td>
-                    <td>12-07-2021</td>
-                    <td>Revisión</td>
-                    <td></td>
-                </tr>
+                @foreach ($requisiciones as $req)
+                    <tr>
+                        <td>{{ $req->folio }}</td>
+                        <td>{{ $req->catestorg_id }}</td>
+                        <td>{{ $req->fecha_elaboracion }}</td>
+                        <td>{{ $req->catstatus_id }}</td>
+                        <td>
+                            <a href="" class="btn btn-dark">Editar</a>
+                            <a href="" class="btn btn-success">Ver</a>
+                            <a href="" class="btn btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                @endforeach
             </tbody>
         </table>
     </div>

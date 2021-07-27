@@ -17,8 +17,8 @@ class CreateCatclavesTable extends Migration
             $table->id();
             $table->string('clave');
             $table->boolean('bactivo')->default('1');
-            $table->foreignId('catestorg_id')->nullable()->references('id')->on('catestorg')->comment('id del centro de costo');
-            $table->foreignId('catestprg_id')->nullable()->references('id')->on('catestprg')->comment('id del proyecto');
+            $table->foreignId('catestorg_id')->nullable()->references('id')->on('catestorgs')->comment('id del centro de costo');
+            $table->foreignId('catestprg_id')->nullable()->references('id')->on('catestprgs')->comment('id del proyecto');
             $table->timestamps();
         });
     }

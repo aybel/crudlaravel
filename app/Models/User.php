@@ -2,10 +2,11 @@
 
 namespace App\Models;
 
+use App\Models\Requisicion;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -42,4 +43,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**Relación de usuario a requisiciones */
+    public function requisiciones_rel()
+    {
+        return $this->hasMany(Requisicion::class);
+    }
 }

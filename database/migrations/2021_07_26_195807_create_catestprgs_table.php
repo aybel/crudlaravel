@@ -13,7 +13,7 @@ class CreateCatestprgsTable extends Migration
      */
     public function up()
     {
-        Schema::create('catestprg', function (Blueprint $table) {
+        Schema::create('catestprgs', function (Blueprint $table) {
             $table->id();
             $table->char('tipo', '3')->comment('Tipo de estprg');
             $table->string('clave')->comment('clave de estprg');
