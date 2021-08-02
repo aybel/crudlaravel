@@ -21,6 +21,7 @@ Route::get('/', function () {
 Route::get('/requisiciones', 'App\Http\Controllers\RequisicionController@index')->name('requisiciones.index');
 Route::get('/requisiciones/create', 'App\Http\Controllers\RequisicionController@create')->name('requisiciones.create');
 Route::post('/requisiciones', 'App\Http\Controllers\RequisicionController@store')->name('requisiciones.store');
+Route::get('/requisiciones/{requisicion}', 'App\Http\Controllers\RequisicionController@show')->name('requisiciones.show');
 
 Auth::routes();
 

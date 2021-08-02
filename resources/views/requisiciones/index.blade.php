@@ -7,12 +7,14 @@
 @section('content')
     <h2 class="text-center mb-5">Requisiciones</h2>
 
-    <div class="col-md-10 mx-auto p-3 bg-white">
+    <div class="col-md-12 mx-auto p-3 bg-white">
         <table class="table">
             <thead class="bg-primary text-light">
                 <tr>
                     <th scope="col">Folio</th>
                     <th scope="col">Dependencia</th>
+                    <th scope="col">Clave presupuestaria</th>
+                    <th scope="col">Partida</th>
                     <th scope="col">Fecha de creacion</th>
                     <th scope="col">Estado</th>
                     <th scope="col">Acciones</th>
@@ -22,13 +24,16 @@
                 @foreach ($requisiciones as $req)
                     <tr>
                         <td>{{ $req->folio }}</td>
-                        <td>{{ $req->catestorg_id }}</td>
+                        <td>{{ $req->catestorg->nombre }}</td>
+                        <td>{{ $req->catclave->clave }}</td>
+                        <td>{{ $req->catpar->clave }}-{{ $req->catpar->nombre }}</td>
                         <td>{{ $req->fecha_elaboracion }}</td>
-                        <td>{{ $req->catstatus_id }}</td>
+                        <td>{{ $req->catstatu->nombre }}</td>
                         <td>
                             <a href="" class="btn btn-dark">Editar</a>
                             <a href="" class="btn btn-success">Ver</a>
                             <a href="" class="btn btn-danger">Eliminar</a>
+                            <a href="" class="btn btn-secondary">Agregar articulos</a>
                         </td>
                     </tr>
                 @endforeach

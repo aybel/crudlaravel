@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Catestorg extends Model
 {
     use HasFactory;
+
+
 }

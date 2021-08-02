@@ -27,15 +27,16 @@
 
                 <div class="form-group">
                     <label for="catestorg_id">Dependencia</label>
-                    <select name="catestorg_id" id="catestorg_id" class="form-control">
+                    <select name="catestorgs_id" id="catestorgs_id" class="form-control">
                         <option value="">--Seleccionar dependencia--</option>
-                        @foreach ($comboDependencias as $id => $dependencia)
-                            <option value="{{ $id }}">
-                                {{ $dependencia }}
+                        @foreach ($comboDependencias as $dependencia)
+                            <option value="{{ $dependencia->id }}"
+                                {{ old('dependencia') == $dependencia->id ? 'selected' : '' }}>
+                                {{ $dependencia->clave }} - {{ $dependencia->nombre }}
                             </option>
                         @endforeach
                     </select>
-                    @error('catestorg_id')
+                    @error('catestorgs_id')
                         <span class="invalid-feedback d-block" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -43,11 +44,11 @@
                 </div>
                 <div class="form-group">
                     <label for="claves_id">Claves presupuestarias</label>
-                    <select name="claves_id" id="claves_id" class="form-control">
+                    <select name="catclaves_id" id="catclaves_id" class="form-control">
                         <option value="">--Seleccionar clave--</option>
-                        @foreach ($comboClaves as $id => $clave)
-                            <option value="{{ $id }}">
-                                {{ $clave }}
+                        @foreach ($comboClaves as $clave)
+                            <option value="{{ $clave->id }}">
+                                {{ $clave->clave }}
                             </option>
                         @endforeach
                     </select>
@@ -58,25 +59,25 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="catpar_id">Partida de gasto</label>
-                    <select name="catpar_id" id="catpar_id" class="form-control">
+                    <label for="catpars_id">Partida de gasto</label>
+                    <select name="catpars_id" id="catpar_id" class="form-control">
                         <option value="">--Seleccionar partida--</option>
-                        @foreach ($comboPartidas as $id => $partida)
-                            <option value="{{ $id }}">
-                                {{ $partida }}
+                        @foreach ($comboPartidas as $partida)
+                            <option value="{{ $partida->id }}">
+                                {{ $partida->clave }} - {{ $partida->nombre }}
                             </option>
                         @endforeach
 
                     </select>
-                    @error('catpar_id')
+                    @error('catpars_id')
                         <span class="invalid-feedback d-block" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="catestorg_id">Mes de afectación</label>
-                    <select name="mes" id="catestorg_id" class="form-control">
+                    <label for="mes">Mes de afectación</label>
+                    <select name="mes" id="mes" class="form-control">
                         <option value="">--Seleccionar mes--</option>
                         @foreach ($comboMeses as $id => $mes)
                             <option value="{{ $id }}">
@@ -121,8 +122,6 @@
                         </span>
                     @enderror
                 </div>
-
-
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="Generar requisición" />
                 </div>
