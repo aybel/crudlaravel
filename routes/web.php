@@ -14,14 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'App\Http\Controllers\InicioController')->name('inicio');
 Route::get('/requisiciones', 'App\Http\Controllers\RequisicionController@index')->name('requisiciones.index');
 Route::get('/requisiciones/create', 'App\Http\Controllers\RequisicionController@create')->name('requisiciones.create');
 Route::post('/requisiciones', 'App\Http\Controllers\RequisicionController@store')->name('requisiciones.store');
 Route::get('/requisiciones/{requisicion}', 'App\Http\Controllers\RequisicionController@show')->name('requisiciones.show');
+Route::delete('/requisiciones/{requisicion}', 'App\Http\Controllers\RequisicionController@destroy')->name('requisicion.destroy');
 
 Auth::routes();
 

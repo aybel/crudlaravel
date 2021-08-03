@@ -94,7 +94,7 @@ class RequisicionController extends Controller
      */
     public function show(Requisicion $requisicion)
     {
-        return view('requisiciones.show',compact('requisicion'));
+        return view('requisiciones.show', compact('requisicion'));
     }
 
     /**
@@ -129,5 +129,9 @@ class RequisicionController extends Controller
     public function destroy(Requisicion $requisicion)
     {
         //
+        $this->authorize('delete', $requisicion);
+
+        $requisicion->delete();
+        return Redirect::route('requisiciones.index');
     }
 }

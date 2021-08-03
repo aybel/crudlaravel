@@ -5,7 +5,7 @@
  */
 
 import VueSweetAlert2 from 'vue-sweetalert2';
-
+import 'sweetalert2/dist/sweetalert2.all';
 
 require('./bootstrap');
 
@@ -24,12 +24,15 @@ window.Vue = require('vue').default;
 
 //Agregamos los componentes
 Vue.use(VueSweetAlert2);
+
+Vue.component('pagina-inicio', require('./components/PaginaInicio.vue').default);
+
 Vue.component('formato-fecha', require('./components/FormatoFecha.vue').default);
 Vue.component('alerta-mensaje', require('./components/AlertaMensaje.vue').default);
 Vue.component('eliminar-requisicion', require('./components/EliminarRequisicion.vue').default);
 Vue.component('alerta-confirm', require('./components/AlertaConfirm.vue').default);
 
-console.log(Vue);
+//console.log(Vue);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
