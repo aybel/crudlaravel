@@ -9,8 +9,12 @@
         <h2 class="text-center mb-2">Clave presupuestaria: {{ $requisicion->catclave->clave }}</h2>
         <h2 class="text-center mb-2">Partida de gasto:
             {{ $requisicion->catpar->clave }}-{{ $requisicion->catpar->nombre }}</h2>
-        <h2 class="text-center mb-2">Fecha de elaboración: {{ $requisicion->fecha_elaboracion }}</h2>
+        <h2 class="text-center mb-2">Fecha de elaboración:
+            <formato-fecha fecha='{{ $requisicion->fecha_elaboracion }}'></formato-fecha>
+        </h2>
         <h2 class="text-center mb-2">Estado: {{ $requisicion->catstatu->nombre }}</h2>
     </article>
+
+
 
 @endsection

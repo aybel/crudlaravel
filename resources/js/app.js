@@ -4,6 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+import VueSweetAlert2 from 'vue-sweetalert2';
+
+
 require('./bootstrap');
 
 window.Vue = require('vue').default;
@@ -19,8 +22,14 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+//Agregamos los componentes
+Vue.use(VueSweetAlert2);
+Vue.component('formato-fecha', require('./components/FormatoFecha.vue').default);
+Vue.component('alerta-mensaje', require('./components/AlertaMensaje.vue').default);
+Vue.component('eliminar-requisicion', require('./components/EliminarRequisicion.vue').default);
+Vue.component('alerta-confirm', require('./components/AlertaConfirm.vue').default);
 
+console.log(Vue);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

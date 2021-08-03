@@ -32,7 +32,7 @@
                         <td>
                             <a href="" class="btn btn-dark">Editar</a>
                             <a href="" class="btn btn-success">Ver</a>
-                            <a href="" class="btn btn-danger">Eliminar</a>
+                            <eliminar-requisicion msj="putos" titulo="webos" requisicion-id={{ $req->id }}></eliminar-requisicion>
                             <a href="" class="btn btn-secondary">Agregar articulos</a>
                         </td>
                     </tr>
